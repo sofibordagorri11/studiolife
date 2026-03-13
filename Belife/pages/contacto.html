@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belife - Contacto</title>
+
+  <!-- ✅ Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="../style/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a class="brand" href="../index.html" aria-label="Ir al inicio">
+        <img src="../assets/logo.png" class="logo" alt="Logo Studio Belife" />
+        <h1 class="brand__title">STUDIOBELIFE</h1>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="../pages/manicura.html">Manicura</a></li>
+          <li><a href="../pages/peluqueria.html">Peluquería</a></li>
+          <li><a href="../pages/barberia.html">Barbería</a></li>
+          <li><a href="../pages/galeria.html">Galería</a></li>
+          <li><a class="is-active" href="../pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ✅ Bootstrap container (modo celular automático) -->
+  <main class="container py-4">
+
+    <section class="contact__hero mb-4">
+      <h2>Contacto</h2>
+      <p>
+        ¿Querés reservar, consultar precios o llegar al local sin vueltas?
+        Escribinos por WhatsApp y te respondemos rápido.
+      </p>
+
+      <div class="contact__cta d-flex flex-wrap gap-2">
+        <a class="btn btn--primary" target="_blank" rel="noopener"
+           href="https://wa.me/59899999999?text=Hola%20Studio%20Belife!%20Quiero%20reservar%20un%20turno%20😊">
+          WhatsApp
+        </a>
+
+        <a class="btn btn--ghost" href="tel:+59899999999">Llamar</a>
+
+        <a class="btn btn--ghost" href="mailto:studiobelife@gmail.com">Email</a>
+      </div>
+    </section>
+
+    <!-- ✅ Bootstrap grid: en celular 1 columna, en compu 2 columnas -->
+    <section class="row g-4">
+
+      <!-- INFO -->
+      <div class="col-12 col-lg-6">
+        <article class="card h-100">
+          <h3>Encontranos</h3>
+
+          <ul class="contact__list">
+            <li>
+              <span class="contact__label">Dirección</span>
+              <span class="contact__value">Av, Carlos Maria Ramirez 153, 11900, Montevideo, Uruguay</span>
+            </li>
+
+            <li>
+              <span class="contact__label">Horario</span>
+              <span class="contact__value">Lun a Sáb — 10:00 a 19:00</span>
+            </li>
+
+            <li>
+              <span class="contact__label">Teléfono</span>
+              <a class="contact__link" href="tel:+59895533304">+598 95 533 304</a>
+            </li>
+
+            <li>
+              <span class="contact__label">Email</span>
+              <a class="contact__link" href="mailto:studiobelife@gmail.com">studiobelife@gmail.com</a>
+            </li>
+
+            <li>
+              <span class="contact__label">Instagram</span>
+              <a class="contact__link" target="_blank" rel="noopener" href="https://instagram.com/">
+                @studiobelife
+              </a>
+            </li>
+          </ul>
+
+          <div class="contact__actions d-flex flex-wrap gap-2 mt-3">
+            <a class="btn btn--soft" target="_blank" rel="noopener" href="https://www.google.com/maps">
+              Cómo llegar
+            </a>
+            <a class="btn btn--soft" target="_blank" rel="noopener"
+               href="https://wa.me/59899999999?text=Hola%20Studio%20Belife!%20Quiero%20info%20sobre%20servicios%20y%20precios%20😊">
+              Consultar precios
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- MAPA -->
+      <div class="col-12 col-lg-6">
+        <article class="card h-100">
+          <h3>Mapa</h3>
+          <div class="map">
+            <iframe
+              title="Mapa Studio Belife"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.9830032513205!2d-56.22412350000002!3d-34.8566544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1d5000c875289%3A0x966841a68043286a!2sStudio%20Belife%20Peluqueria%20y%20Barberia!5e0!3m2!1ses!2suy!4v1768931600379!5m2!1ses!2suy"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </article>
+      </div>
+
+      <!-- FORM (full width en celular y desktop) -->
+      <div class="col-12">
+        <article class="card">
+          <h3>Escribinos</h3>
+          <p class="muted">Dejanos tu consulta y te respondemos a la brevedad.</p>
+
+          <!-- ✅ Form en Bootstrap: en celular 1 col, en desktop 2 col -->
+          <form class="row g-3" action="#" method="post">
+            <div class="col-12 col-md-6">
+              <label class="form-label" for="nombre">Nombre</label>
+              <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label class="form-label" for="apellido">Apellido</label>
+              <input class="form-control" id="apellido" name="apellido" type="text" placeholder="Tu apellido" />
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label class="form-label" for="telefono">Teléfono / WhatsApp</label>
+              <input class="form-control" id="telefono" name="telefono" type="tel" placeholder="+598 ..." />
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-control" id="email" name="email" type="email" placeholder="tu@mail.com" required />
+            </div>
+
+            <div class="col-12">
+              <label class="form-label" for="servicio">Servicio</label>
+              <select class="form-select" id="servicio" name="servicio">
+                <option value="">Elegí una opción</option>
+                <option>Manicura</option>
+                <option>Peluquería</option>
+                <option>Barbería</option>
+                <option>Otro</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label" for="mensaje">Mensaje</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Contanos qué te gustaría hacer..." required></textarea>
+            </div>
+
+            <div class="col-12">
+              <button class="btn btn--primary w-100" type="submit">Enviar consulta</button>
+              <p class="muted small mt-2 mb-0">
+                Si querés respuesta más rápida: tocá “WhatsApp” arriba y te atendemos por ahí.
+              </p>
+            </div>
+          </form>
+        </article>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Studio Belife — Montevideo, Uruguay</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- ✅ Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

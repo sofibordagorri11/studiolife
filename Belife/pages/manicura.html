@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belife - Manicura</title>
+
+  <!-- ✅ Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="../style/style.css" />
+</head>
+
+<body>
+
+  <header>
+    <img src="../assets/logo.png" class="logo" alt="Logo Studio Belife" />
+    <a href="../index.html"><h1 class="title">STUDIOBELIFE</h1></a>
+
+    <nav>
+      <ul>
+        <li><a href="./manicura.html">Manicura</a></li>
+        <li><a href="./peluqueria.html">Peluquería</a></li>
+        <li><a href="./barberia.html">Barbería</a></li>
+        <li><a href="./galeria.html">Galería</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ Bootstrap container -->
+  <main class="container py-4">
+
+    <!-- HERO -->
+    <section class="service-hero service-hero--nails card p-4 mb-4">
+      <div class="service-hero__content">
+        <p class="kicker">SERVICIOS</p>
+        <h2>Manicuría & Pedicuría</h2>
+        <p class="service-hero__lead">
+          Servicios prolijos, duraderos y con diseño. Reservá por WhatsApp.
+        </p>
+
+        <div class="service-hero__actions d-flex flex-wrap gap-2">
+          <a class="btn btn-primary" href="https://wa.me/59895533304" target="_blank" rel="noopener">
+            Reservar por WhatsApp →
+          </a>
+          <a class="btn btn-outline-secondary" href="./galeria.html">Ver trabajos</a>
+        </div>
+
+        <div class="service-badges d-flex flex-wrap gap-2 mt-3">
+          <span class="badge text-bg-secondary">Manos</span>
+          <span class="badge text-bg-secondary">Soft Gel</span>
+          <span class="badge text-bg-secondary">Pies</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ CARDS en Bootstrap grid (celu: 1 col / compu: 2 col) -->
+    <section class="row g-4">
+
+      <!-- SERVICIOS -->
+      <div class="col-12 col-lg-6">
+        <article class="service-card card p-4 h-100">
+          <div class="service-card__head">
+            <h3>Servicios</h3>
+            <p>Elegí tu servicio y coordinamos tu turno.</p>
+          </div>
+
+          <ul class="service-list">
+            <li><span>Manicura Rusa</span><b class="service-meta">$350 · 30 minutos</b></li>
+            <li><span>Soft Gel</span><b class="service-meta">$1.000 · 90 minutos</b></li>
+            <li><span>Base rubber - kapping</span><b class="service-meta">$700 · 1 hora</b></li>
+            <li><span>Esmaltado semipermanente</span><b class="service-meta">$550 · 30 minutos</b></li>
+            <li><span>Estética de pies</span><b class="service-meta">$550 · 30 minutos</b></li>
+            <li><span>Pedicura</span><b class="service-meta">$890 · 1 hora</b></li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- QUÉ INCLUYE -->
+      <div class="col-12 col-lg-6">
+        <article class="service-card card p-4 h-100">
+          <div class="service-card__head">
+            <h3>¿Qué incluye?</h3>
+            <p>Para que sepas exactamente qué estás reservando.</p>
+          </div>
+
+          <ul class="service-list">
+            <li><span>Diagnóstico rápido del estado de la uña</span><b class="service-meta">Incluido</b></li>
+            <li><span>Higiene y preparación (limado + forma)</span><b class="service-meta">Incluido</b></li>
+            <li><span>Trabajo de cutículas seguro</span><b class="service-meta">Incluido</b></li>
+            <li><span>Terminación y sellado para mayor duración</span><b class="service-meta">Incluido</b></li>
+            <li><span>Hidratación (aceite de cutículas + crema)</span><b class="service-meta">Incluido</b></li>
+            <li><span>Diseños / nail art / extras</span><b class="service-meta">Consultar</b></li>
+          </ul>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="service-cta mt-5">
+      <div class="service-cta__box card p-4 text-center">
+        <h3>¿Te reservo?</h3>
+        <p>Mandanos un WhatsApp con el servicio + día + horario y te confirmamos.</p>
+        <a class="btn btn-primary w-100 w-md-auto" href="https://wa.me/59895533304" target="_blank" rel="noopener">
+          Reservar ahora →
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-4">
+    <h2>Derechos Reservados</h2>
+    <h2>Creado por el estudio</h2>
+    <div class="d-flex justify-content-center gap-3 mt-3">
+      <a href="https://www.instagram.com/studiobelife_/" target="_blank" rel="noopener">
+        <img src="../assets/instagram.png" class="redes" alt="Logo de instagram" />
+      </a>
+      <a href="https://www.facebook.com/people/Studiobelife/61578109405108/" target="_blank" rel="noopener">
+        <img src="../assets/facebook.png" class="redes" alt="Logo de facebook" />
+      </a>
+    </div>
+  </footer>
+
+  <!-- ✅ Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
