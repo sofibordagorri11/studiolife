@@ -118,7 +118,7 @@ main{max-width:1100px;margin:0 auto;padding:22px 18px 60px}
 
 /* ===== Header / Nav (único) ===== */
 header{
-  position:sticky;top:0;z-index:50;
+  position:relavite;
   background:rgba(251,247,246,.85);
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--border);
@@ -649,3 +649,4 @@ nav a.active{font-weight:700;text-decoration:underline;text-underline-offset:6px
   .service-meta{margin-left:36px}
 }
 
+update css
