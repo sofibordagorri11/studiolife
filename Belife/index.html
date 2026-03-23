@@ -49,122 +49,138 @@
   </section>
 
   <!-- ✅ Bootstrap container general -->
-  <main class="container py-4">
-    <section class="home-info">
+<main class="container py-4">
+  <section class="home-info">
 
-      <!-- Acerca -->
-      <div class="home-block mb-4">
-        <p class="kicker">ACERCA DE NOSOTROS</p>
-        <h3>Studio Belife</h3>
-        <p>
-          Studio Belife es un espacio unisex donde combinamos peluquería, barbería, manicuría y estética
-          para brindarte un servicio completo en un solo lugar. Atención personalizada, ambiente cómodo
-          y productos de calidad.
-        </p>
+    <!-- Acerca -->
+    <div class="home-block mb-4">
+      <p class="kicker">ACERCA DE NOSOTROS</p>
+      <h3>Studio Belife</h3>
+      <p>
+        Studio Belife es un espacio unisex donde combinamos peluquería, barbería, manicuría y estética
+        para brindarte un servicio completo en un solo lugar. Atención personalizada, ambiente cómodo
+        y productos de calidad.
+      </p>
+    </div>
+
+    <!-- Categorías / servicios -->
+    <div class="home-block mb-4">
+      <p class="kicker">CATEGORÍAS</p>
+      <h3>¿Qué ofrecemos?</h3>
+
+      <div class="chips d-flex flex-wrap gap-2">
+        <a class="chip" href="./pages/manicura.html">Manicuría</a>
+        <a class="chip" href="./pages/peluqueria.html">Peluquería</a>
+        <a class="chip" href="./pages/barberia.html">Barbería</a>
+      </div>
+    </div>
+
+    <!-- Presupuesto -->
+    <div class="home-block mb-4">
+      <p class="kicker">PRESUPUESTO</p>
+      <h3>Armá tu presupuesto</h3>
+      <p>Elegí un servicio para ver el precio estimado</p>
+
+      <div class="d-flex flex-wrap gap-2">
+        <button onclick="mostrarPrecio('Manicuría', 25)">Manicuría</button>
+        <button onclick="mostrarPrecio('Peluquería', 30)">Peluquería</button>
+        <button onclick="mostrarPrecio('Barbería', 20)">Barbería</button>
       </div>
 
-      <!-- Categorías / servicios -->
-      <div class="home-block mb-4">
-        <p class="kicker">CATEGORÍAS</p>
-        <h3>¿Qué ofrecemos?</h3>
+      <div id="resultado" style="margin-top: 15px;">
+        Seleccioná un servicio
+      </div>
+    </div>
 
-        <div class="chips d-flex flex-wrap gap-2">
-          <a class="chip" href="./pages/manicura.html">Manicuría</a>
-          <a class="chip" href="./pages/peluqueria.html">Peluquería</a>
-          <a class="chip" href="./pages/barberia.html">Barbería</a>
-        </div>
+    <!-- ✅ Equipo en Bootstrap grid (modo celular) -->
+    <div class="row g-4 mb-4">
+
+      <div class="col-12 col-md-6">
+        <article class="team-card h-100">
+          <img src="./assets/erika.jpg" alt="Erika - Peluquera y Colorimetrista" class="team-photo" />
+          <div>
+            <h4>Erika</h4>
+            <p class="team-role">Peluquera & Colorimetrista</p>
+            <p class="team-desc">
+              Erika es nuestra peluquera y colorimetrista. Con una sólida formación profesional,
+              domina técnicas de coloración, mechas y cortes adaptados a cada tipo de cabello.
+              Su experiencia y criterio hacen que cada servicio esté pensado para realzar tu imagen con sofisticación.
+            </p>
+          </div>
+        </article>
       </div>
 
-      <!-- ✅ Equipo en Bootstrap grid (modo celular) -->
-      <div class="row g-4 mb-4">
-
-        <div class="col-12 col-md-6">
-          <article class="team-card h-100">
-            <img src="./assets/erika.jpg" alt="Erika - Peluquera y Colorimetrista" class="team-photo" />
-            <div>
-              <h4>Erika</h4>
-              <p class="team-role">Peluquera & Colorimetrista</p>
-              <p class="team-desc">
-                Erika es nuestra peluquera y colorimetrista. Con una sólida formación profesional,
-                domina técnicas de coloración, mechas y cortes adaptados a cada tipo de cabello.
-                Su experiencia y criterio hacen que cada servicio esté pensado para realzar tu imagen con sofisticación.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-12 col-md-6">
-          <article class="team-card h-100">
-            <img src="./assets/andrea.jpg" alt="Andrea - Pedicurista y Peluquera" class="team-photo" />
-            <div>
-              <h4>Andrea</h4>
-              <p class="team-role">Pedicurista & Peluquera</p>
-              <p class="team-desc">
-                Andrea combina su experiencia en peluquería con una profunda vocación por la pedicuría profesional.
-                Trabaja con paciencia, cuidado y excelencia, brindando confianza especialmente en tratamientos delicados.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-12 col-md-6">
-          <article class="team-card h-100">
-            <img src="./assets/belen.jpg" alt="Belén - Especialista en manicura y pedicura" class="team-photo" />
-            <div>
-              <h4>Belén</h4>
-              <p class="team-role">Manicurista & Pedicurista</p>
-              <p class="team-desc">
-                Belén es nuestra especialista en manicura y pedicura. Se destaca por su precisión,
-                creatividad y atención al detalle, creando diseños personalizados que combinan elegancia y estilo.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-12 col-md-6">
-          <article class="team-card h-100">
-            <img src="./assets/roman.jpg" alt="Román - Especialista en barbería" class="team-photo" />
-            <div>
-              <h4>Román</h4>
-              <p class="team-role">Barbero</p>
-              <p class="team-desc">
-                Román es nuestro especialista en barbería. Destaca por sus cortes precisos y acabados impecables.
-                También realiza colorimetría y mechas, consolidando a Studio Belife como un espacio para todos.
-              </p>
-            </div>
-          </article>
-        </div>
-
+      <div class="col-12 col-md-6">
+        <article class="team-card h-100">
+          <img src="./assets/andrea.jpg" alt="Andrea - Pedicurista y Peluquera" class="team-photo" />
+          <div>
+            <h4>Andrea</h4>
+            <p class="team-role">Pedicurista & Peluquera</p>
+            <p class="team-desc">
+              Andrea combina su experiencia en peluquería con una profunda vocación por la pedicuría profesional.
+              Trabaja con paciencia, cuidado y excelencia, brindando confianza especialmente en tratamientos delicados.
+            </p>
+          </div>
+        </article>
       </div>
 
-      <!-- Horario -->
-      <div class="home-block mb-4">
-        <p class="kicker">HORARIO</p>
-        <h3>Horas de trabajo</h3>
-
-        <!-- ✅ si querés, esto también puede ser row/cols pero lo dejo con tu estilo -->
-        <div class="hours">
-          <div class="hour"><span>Lunes</span><b>10:00 - 19:00</b></div>
-          <div class="hour"><span>Martes</span><b>10:00 - 19:00</b></div>
-          <div class="hour"><span>Miércoles</span><b>10:00 - 19:00</b></div>
-          <div class="hour"><span>Jueves</span><b>10:00 - 19:00</b></div>
-          <div class="hour"><span>Viernes</span><b>10:00 - 19:00</b></div>
-          <div class="hour"><span>Sábado</span><b>10:00 - 18:00</b></div>
-          <div class="hour"><span>Domingo</span><b class="closed">Cerrado</b></div>
-        </div>
+      <div class="col-12 col-md-6">
+        <article class="team-card h-100">
+          <img src="./assets/belen.jpg" alt="Belén - Especialista en manicura y pedicura" class="team-photo" />
+          <div>
+            <h4>Belén</h4>
+            <p class="team-role">Manicurista & Pedicurista</p>
+            <p class="team-desc">
+              Belén es nuestra especialista en manicura y pedicura. Se destaca por su precisión,
+              creatividad y atención al detalle, creando diseños personalizados que combinan elegancia y estilo.
+            </p>
+          </div>
+        </article>
       </div>
 
-      <!-- Contacto rápido -->
-      <div class="home-block mb-2">
-        <p class="kicker">CONTACTO</p>
-        <h3>Escribinos</h3>
-        <p>WhatsApp: <a href="https://wa.me/59895533304" target="_blank" rel="noopener">+598 95 533 304</a></p>
-        <p>Instagram: <a href="https://instagram.com/studiobelife" target="_blank" rel="noopener">@studiobelife</a></p>
-        <p>Email: <a href="mailto:studiobelife153@gmail.com">studiobelife153@gmail.com</a></p>
+      <div class="col-12 col-md-6">
+        <article class="team-card h-100">
+          <img src="./assets/roman.jpg" alt="Román - Especialista en barbería" class="team-photo" />
+          <div>
+            <h4>Román</h4>
+            <p class="team-role">Barbero</p>
+            <p class="team-desc">
+              Román es nuestro especialista en barbería. Destaca por sus cortes precisos y acabados impecables.
+              También realiza colorimetría y mechas, consolidando a Studio Belife como un espacio para todos.
+            </p>
+          </div>
+        </article>
       </div>
 
-    </section>
-  </main>
+    </div>
+
+    <!-- Horario -->
+    <div class="home-block mb-4">
+      <p class="kicker">HORARIO</p>
+      <h3>Horas de trabajo</h3>
+
+      <div class="hours">
+        <div class="hour"><span>Lunes</span><b>10:00 - 19:00</b></div>
+        <div class="hour"><span>Martes</span><b>10:00 - 19:00</b></div>
+        <div class="hour"><span>Miércoles</span><b>10:00 - 19:00</b></div>
+        <div class="hour"><span>Jueves</span><b>10:00 - 19:00</b></div>
+        <div class="hour"><span>Viernes</span><b>10:00 - 19:00</b></div>
+        <div class="hour"><span>Sábado</span><b>10:00 - 18:00</b></div>
+        <div class="hour"><span>Domingo</span><b class="closed">Cerrado</b></div>
+      </div>
+    </div>
+
+    <!-- Contacto rápido -->
+    <div class="home-block mb-2">
+      <p class="kicker">CONTACTO</p>
+      <h3>Escribinos</h3>
+      <p>WhatsApp: <a href="https://wa.me/59895533304" target="_blank" rel="noopener">+598 95 533 304</a></p>
+      <p>Instagram: <a href="https://instagram.com/studiobelife" target="_blank" rel="noopener">@studiobelife</a></p>
+      <p>Email: <a href="mailto:studiobelife153@gmail.com">studiobelife153@gmail.com</a></p>
+    </div>
+
+  </section>
+</main>
 
   <footer>
     <h2>Derechos Reservados</h2>
@@ -188,5 +204,8 @@
 
   <!-- ✅ Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./app.js"></script>
 </body>
+
 </html>
