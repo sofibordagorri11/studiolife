@@ -1,9 +1,6 @@
-/* ================================
-   STUDIO BELIFE — CSS REDUCIDO
-   (mantiene look final)
-================================ */
+/* STUDIO BELIFE */
 
-/* ===== Variables / Theme tokens ===== */
+/* Variables / Theme tokens */
 :root{
   --bg:#fbf7f6;
   --bg-cream:#fff6f8;
@@ -36,7 +33,7 @@ body.theme-barber{--accent:#2d2d2d;--accent-weak:rgba(45,45,45,.10)}
 body.theme-hair{--accent:#d98ca3;--accent-weak:rgba(217,140,163,.14)}
 body.theme-nails{--accent:#c07aa0;--accent-weak:rgba(192,122,160,.14)}
 
-/* ===== Base ===== */
+/* Base */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
@@ -116,9 +113,9 @@ main{max-width:1100px;margin:0 auto;padding:22px 18px 60px}
 }
 .chip:hover{transform:translateY(-2px);background:rgba(217,140,163,.14);box-shadow:0 18px 30px rgba(0,0,0,.10)}
 
-/* ===== Header / Nav (único) ===== */
+/* Header */
 header{
-  position:relavite;
+  position:relative;
   background:rgba(251,247,246,.85);
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--border);
@@ -156,7 +153,7 @@ header a[aria-current="page"]{
   border-color:var(--border);
 }
 
-/* ===== Hero (home) ===== */
+/* Hero (home) */
 .hero{
   width:100%;
   height:clamp(340px,55vh,560px);
@@ -205,7 +202,7 @@ header a[aria-current="page"]{
 }
 .btn-hero:hover{transform:translateY(-2px);box-shadow:0 24px 55px rgba(200,110,140,.55)}
 
-/* ===== Home blocks ===== */
+/* Home blocks */
 .home-info{display:grid;gap:26px;padding:34px 0 46px}
 .home-cta,.home-block{
   background:rgba(255,255,255,.78);
@@ -234,7 +231,7 @@ header a[aria-current="page"]{
   background:linear-gradient(90deg,rgba(217,140,163,.95),rgba(217,140,163,0));
 }
 
-/* ===== Team ===== */
+/* Team */
 .team-grid{
   display:grid;
   gap:22px;
@@ -309,7 +306,7 @@ header a[aria-current="page"]{
   overflow:hidden;
 }
 
-/* ===== Hours ===== */
+/* Hours */
 .hours{margin-top:12px;display:grid;gap:10px}
 .hour{
   display:flex;align-items:center;justify-content:space-between;
@@ -322,7 +319,7 @@ header a[aria-current="page"]{
 .hour b{color:rgba(0,0,0,.80)}
 .closed{color:rgba(0,0,0,.42)}
 
-/* ===== Footer ===== */
+/* Footer */
 footer{
   margin-top:36px;
   padding:28px 4%;
@@ -346,7 +343,7 @@ footer ul{list-style:none;padding:0;margin:0;display:flex;justify-content:center
 }
 .redes:hover{transform:translateY(-2px)}
 
-/* ===== Servicios (service-hero / grid / list) ===== */
+/* Servicios (service-hero / grid / list) */
 .service-hero{
   width:min(var(--container),92%);
   margin:26px auto 10px;
@@ -429,7 +426,7 @@ service-hero__lead{max-width:70ch;margin:0 0 16px;color:rgba(0,0,0,.68);font-siz
 .service-cta__box h3{margin:0 0 6px;color:var(--ink);font-size:1.5rem}
 .service-cta__box p{margin:0 0 12px;color:rgba(0,0,0,.65)}
 
-/* ===== Galería (FLEXBOX) ===== */
+/* Galería (FLEXBOX) */
 .galeria{padding:60px 20px;text-align:center}
 .galeria h2{color:var(--ink);font-size:clamp(22px,3vw,32px);margin:0 0 10px;letter-spacing:.5px}
 .galeria-sub{max-width:680px;margin:0 auto 35px;color:var(--text);opacity:.9}
@@ -461,7 +458,7 @@ service-hero__lead{max-width:70ch;margin:0 0 16px;color:rgba(0,0,0,.68);font-siz
 .galeria-item:hover img{transform:scale(1.05)}
 nav a.active{font-weight:700;text-decoration:underline;text-underline-offset:6px}
 
-/* ===== Contacto (header BEM + form) ===== */
+/* Contacto (header BEM + form) */
 .header{
   position:sticky;top:0;z-index:20;
   background:rgba(247,220,226,.85);
@@ -541,7 +538,7 @@ nav a.active{font-weight:700;text-decoration:underline;text-underline-offset:6px
 .card--map .map{flex:1}
 .card--map .map iframe{height:100%;min-height:320px}
 
-/* ===== Barbería (estructura, sin duplicar “looks”) ===== */
+/* Barbería (estructura, sin duplicar “looks”) */
 .page-barberia .barber-hero2{
   display:grid;grid-template-columns:1.2fr .8fr;gap:18px;
   padding:26px;
@@ -605,14 +602,14 @@ nav a.active{font-weight:700;text-decoration:underline;text-underline-offset:6px
   font-weight:900;color:rgba(0,0,0,.65);
 }
 
-/* ===== Animación ===== */
+/* Animación */
 @media (prefers-reduced-motion:no-preference){
   .team-card,.home-block,.chip,.btn,.btn-hero,header li a{transition:transform .18s ease,box-shadow .18s ease,background-color .18s ease,filter .18s ease}
   .home-block{animation:rise .35s ease both}
   @keyframes rise{from{transform:translateY(6px);opacity:0}to{transform:translateY(0);opacity:1}}
 }
 
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width:900px){
   header nav{margin-left:0;width:100%}
   header ul{justify-content:flex-start}
@@ -649,4 +646,129 @@ nav a.active{font-weight:700;text-decoration:underline;text-underline-offset:6px
   .service-meta{margin-left:36px}
 }
 
-update css
+.presupuesto {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 32px 24px;
+  background: linear-gradient(180deg, #fff8fa 0%, #ffffff 100%);
+  border: 1px solid rgba(216, 140, 154, 0.18);
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.presupuesto h2,
+.presupuesto h3 {
+  font-size: 2rem;
+  color: #3a2b2f;
+  margin-bottom: 10px;
+}
+
+.presupuesto p {
+  color: #6b5b60;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.presupuesto-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 28px 0 24px;
+}
+
+.presupuesto-categorias button {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #f7d7de;
+  color: #5b3e46;
+  font-size: 0.98rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(216, 140, 154, 0.16);
+}
+
+.presupuesto-categorias button:hover {
+  transform: translateY(-2px);
+  background: #efbec9;
+}
+
+.presupuesto-categorias button.activo {
+  background: #d88c9a;
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(216, 140, 154, 0.3);
+}
+
+#servicio {
+  width: 100%;
+  max-width: 460px;
+  padding: 14px 16px;
+  border: 1px solid #e6c8cf;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #4a3a3f;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+#servicio:focus {
+  border-color: #d88c9a;
+  box-shadow: 0 0 0 4px rgba(216, 140, 154, 0.15);
+}
+
+#resultado-precio {
+  margin-top: 22px;
+  padding: 18px 20px;
+  background: #fff1f4;
+  border: 1px solid rgba(216, 140, 154, 0.2);
+  border-radius: 16px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #7a4c57;
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aclaracion-precio {
+  margin-top: 14px;
+  font-size: 0.92rem;
+  color: #8a737a;
+}
+
+@media (max-width: 768px) {
+  .presupuesto {
+    padding: 24px 18px;
+    margin: 40px 16px;
+    border-radius: 20px;
+  }
+
+  .presupuesto h2,
+  .presupuesto h3 {
+    font-size: 1.6rem;
+  }
+
+  .presupuesto-categorias {
+    gap: 10px;
+  }
+
+  .presupuesto-categorias button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  #servicio {
+    max-width: 100%;
+  }
+
+  #resultado-precio {
+    font-size: 1rem;
+    padding: 16px;
+  }
+}
